@@ -181,7 +181,7 @@
         </activity>
 
         <activity
-                android:name="PacSettings"
+                android:name="OrcaSettings"
                 android:label="@string/settings_label_launcher"
                 android:launchMode="singleTask"
                 android:taskAffinity="com.android.settings" >
@@ -1921,29 +1921,14 @@
         </activity>
 
         <!-- Based on CyanogenMod's CIDCircus, Android's easteregg -->
-        <activity android:name=".pac.PACLogoActivity"
+        <activity android:name=".orca.ORCALogoActivity"
                 android:theme="@android:style/Theme.Wallpaper.NoTitleBar.Fullscreen"
                 android:process=":ui">
         </activity>
-        <activity
-            android:name=".pac.PACCircus"
-            android:exported="true"
-            android:label="PACCircus"
-            android:icon="@drawable/empty_icon"
-            android:theme="@android:style/Theme.Wallpaper.NoTitleBar.Fullscreen"
-            android:hardwareAccelerated="true"
-            android:launchMode="singleInstance"
-            android:excludeFromRecents="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name=".pac.PACLOGO" />
-            </intent-filter>
-        </activity>
 
-        <activity android:name=".pac.PieSettings" />
+        <activity android:name=".orca.PieSettings" />
 
-        <activity android:name=".pac.StatusBarSettings" />
+        <activity android:name=".orca.StatusBarSettings" />
 
         <activity android:name=".paranoid.Halo" />
 
@@ -1951,7 +1936,7 @@
 
         <activity android:name=".cyanogenmod.NotificationDrawer" />
 
-        <activity android:name=".PacManSettings" />
+        <activity android:name=".OrcaToolsSettings" />
 
         <activity android:name=".initD" />
 

@@ -31,7 +31,7 @@ import com.android.settings.Utils;
 
 import java.util.List;
 
-public class PacManSettings extends SettingsPreferenceFragment
+public class OrcaToolsSettings extends SettingsPreferenceFragment
         implements Preference.OnPreferenceChangeListener {
 
     private static final String TRDS = "trds_settings";
@@ -74,7 +74,7 @@ public class PacManSettings extends SettingsPreferenceFragment
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.pac_man_settings);
+        addPreferencesFromResource(R.xml.orca_tools_settings);
         PreferenceScreen prefSet = getPreferenceScreen();
         mContext = getActivity();
 

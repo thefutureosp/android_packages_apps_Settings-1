@@ -4596,25 +4596,11 @@
     <!-- PARANOIDANDROID STUFF -->
     <!-- ======================================================================================= -->
 
-    <!-- Change Log strings -->
-    <string name="changelog_title">View changelog</string>
-    <string name="changelog_loading">Loading changelog\u2026</string>
-    <string name="changelog_error">Unable to load changelog</string>
-    <string name="changelog_unknown">Unknown</string>
-    <string name="changelog_version">Version</string>
-
     <!-- About phone titles -->
-    <string name="pac_man_title">PAC-man</string>
-    <string name="pac_title">PAC-man info</string>
+    <string name="orca_tools_title">CUSTOMIZATION</string>
+    <string name="orca_tools">Orca Settings</string>
+    <string name="orca_title">The Orca Project</string>
     <string name="device_about_title">Device info</string>
-
-    <!-- Contributors strings -->
-    <string name="pac_title">PAC-man info</string>
-    <string name="contributors_title">View contributors</string>
-    <string name="contributors_loading">Loading contributors\u2026</string>
-    <string name="contributors_error">Unable to load contributors</string>
-    <string name="contributors_unknown">Unknown</string>
-    <string name="contributors_version">Version</string>
 
     <!-- Sound settings screen -->
     <string name="volume_overlay_single">Single</string>
@@ -4741,7 +4727,7 @@
     <string name="title_tile_desktop_mode">Pie</string>
     <string name="title_tile_hybrid">@string/hybrid_settings</string>
     <string name="title_tile_volume">Volume</string>
-    <string name="title_tile_pib">PAC in Black</string>
+    <string name="title_tile_pib">Dark UI</string>
     <string name="title_tile_music">Music</string>
 
     <string name="title_dynamic_tiles">Dynamic tiles</string>
@@ -4885,25 +4871,22 @@
     <string name="partition_info_sdext">/sd-ext (EXT)</string>
     <string name="partition_info_used_of">/</string>
 
-    <string name="pa_version">ParanoidAndroid version</string>
-    <string name="pa_version_default">Unknown</string>
-
-    <string name="pac_version">PAC version</string>
+    <string name="orca_version">Orca version</string>
 
     <!-- ======================================================================================= -->
     <!-- AOKP -->
     <!-- ======================================================================================= -->
 
-    <string name="rom_control_title">ROM Control</string>
-
-    <string name="aokp_version">AOKP version</string>
-    <string name="aokp_version_default">Unknown</string>
+    <string name="rom_control_title">Orca Settings</string>
 
     <!-- MAKE IT DARK HEADER -->
-    <string name="header_category_dark">Make It Dark</string>
+    <string name="header_category_dark">THEMES AND GENERAL UI</string>
+    
+    <!-- R U PARANOID? -->
+    <string name="ruparanoid">R U PARANOID?</string>
 
     <!-- TRDS Settings -->
-    <string name="trds_settings_title">PAC in Black</string>
+    <string name="trds_settings_title">Dark UI</string>
 
     <string name="vibration_title">Phone vibration</string>
 
@@ -5010,17 +4993,10 @@
     <string name="hex_hint">#ff000000</string>
     <string name="set">Set</string>
 
-    <!-- PACStats -->
-    <string name="pacman_stats">PACStats</string>
-    <string name="pacman_stats_summary">View PAC-Man ROM statistics</string>
-
-    <!-- PAC Console -->
-    <string name="pacconsole_title">PAC-MAN Rom Settings</string>
-
-    <!-- Share PAC-Man ROM -->
-   <string name="share_pacrom">Share PAC-Man ROM</string>
-   <string name="share_pacrom_summary">Let people know you use PAC-Man ROM</string>
-   <string name="share_message">Try PAC-Man ROM! \nWebsite : http://pac-rom.com \nIRC : #pac-rom \nDownload : http://pacman.basketbuild.com</string>
+    <!-- Share Orca -->
+   <string name="share_orcarom">Share Orca ROM</string>
+   <string name="share_orcarom_summary">Let people know you use Orca ROM</string>
+   <string name="share_message">Try a Shamu! The Orca Project. Orca 3, Android 4.3 ROM! \nWebsite : http://orcaproject.co </string>
    <string name="share_chooser_title">Via..</string>
 
     <!-- Lockscreen Security Options -->
@@ -5169,7 +5145,7 @@
     <string name="db_exit">Exit</string>
 
     <!-- Recents Ram Bar -->
-    <string name="ram_bar">Recents RAM bar</string>
+    <string name="ram_bar">Ram Bar</string>
     <string name="ram_bar_note_title">Note</string>
     <string name="ram_bar_note_summary">This rambar shows how android is really using your available ram. Please note that having apps open in the background and cached helps for your device to open your apps faster</string>
     <string name="ram_bar_mode_title">Recents RAM bar mode</string>

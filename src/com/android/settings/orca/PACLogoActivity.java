@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.pac;
+package com.android.settings.orca;
 
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
@@ -35,7 +35,7 @@ import android.widget.Toast;
 
 import com.android.settings.R;
 
-public class PACLogoActivity extends Activity {
+public class ORCALogoActivity extends Activity {
     Toast mToast;
     ImageView mContent;
     int mCount;
@@ -58,7 +58,7 @@ public class PACLogoActivity extends Activity {
         Typeface light = Typeface.create("sans-serif-light", Typeface.NORMAL);
         Typeface normal = Typeface.create("sans-serif", Typeface.BOLD);
 
-        String pacVersion = SystemProperties.get("ro.pac.version");
+        String pacVersion = SystemProperties.get("ro.orca.version");
 
         final float size = 14 * metrics.density;
         final LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(
@@ -72,7 +72,7 @@ public class PACLogoActivity extends Activity {
         tv.setTextSize(1.25f*size);
         tv.setTextColor(0xFFFFFFFF);
         tv.setShadowLayer(4*metrics.density, 0, 2*metrics.density, 0x66000000);
-        tv.setText("PAC-man");
+        tv.setText("ORCA 3");
         view.addView(tv, lp);
    
         tv = new TextView(this);
@@ -80,7 +80,7 @@ public class PACLogoActivity extends Activity {
         tv.setTextSize(size);
         tv.setTextColor(0xFFFFFFFF);
         tv.setShadowLayer(4*metrics.density, 0, 2*metrics.density, 0x66000000);
-        tv.setText(pacVersion);
+        tv.setText(orcaVersion);
         view.addView(tv, lp);
 
         return view;
@@ -118,9 +118,9 @@ public class PACLogoActivity extends Activity {
                         .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK
                             | Intent.FLAG_ACTIVITY_CLEAR_TASK
                             | Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS)
-                        .setClassName("com.android.settings","com.android.settings.pac.PACCircus"));
+                        .setClassName("com.android.settings","com.android.settings.orca.Shamu"));
                 } catch (ActivityNotFoundException ex) {
-                    android.util.Log.e("PACLogoActivity", "Couldn't find a circus of PAC's.");
+                    android.util.Log.e("ORCALogoActivity", "Couldn't find a Killer Whale.");
                 }
                 finish();
                 return true;

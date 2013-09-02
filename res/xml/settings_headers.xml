@@ -65,14 +65,22 @@
         android:fragment="com.android.settings.WirelessSettings"
         android:icon="@drawable/empty_icon" />
 
-    <header android:id="@+id/pac_section"
-        android:title="@string/pac_man_title" />
+    <!-- CUSTOMIZATION -->
+    <header android:id="@+id/orca_section"
+        android:title="@string/orca_tools_title" />
 
     <header
-        android:id="@+id/pac_settings"
-        android:icon="@drawable/ic_settings_pac"
-        android:title="@string/pac_man_title"
-        android:fragment="com.android.settings.PacManSettings" />
+        android:id="@+id/orca_settings"
+        android:icon="@drawable/ic_settings_orca"
+        android:title="@string/orca_tools"
+        android:fragment="com.android.settings.OrcaToolsSettings" />
+
+    <!-- Performance -->
+    <header
+        android:id="@+id/performance_settings"
+        android:fragment="com.android.settings.cyanogenmod.PerformanceSettings"
+        android:icon="@drawable/ic_settings_performance"
+        android:title="@string/performance_settings_title" />
 
     <!-- DEVICE -->
     <header android:id="@+id/device_section"
@@ -228,13 +236,6 @@
         android:fragment="com.android.settings.cyanogenmod.superuser.PolicyNativeFragment"
         android:icon="@drawable/ic_action_permission"
         android:title="@string/superuser" />
-
-    <!-- Performance -->
-    <header
-        android:id="@+id/performance_settings"
-        android:fragment="com.android.settings.cyanogenmod.PerformanceSettings"
-        android:icon="@drawable/ic_settings_performance"
-        android:title="@string/performance_settings_title" />
 
     <!-- About Device -->
     <header

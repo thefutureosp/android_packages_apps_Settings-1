@@ -433,7 +433,7 @@ public class PacSettings extends PreferenceActivity
      */
     @Override
     public void onBuildHeaders(List<Header> headers) {
-        loadHeadersFromResource(R.xml.pac_setting, headers);
+        loadHeadersFromResource(R.xml.orca_setting, headers);
 
         updateHeaderList(headers);
     }

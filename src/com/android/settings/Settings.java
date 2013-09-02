@@ -55,7 +55,7 @@ public class Settings extends Activity {
     private LocalActivityManager localManager;
     private LayoutInflater mInflater;
     private ViewPagerAdapter mPagerAdapter;
-    private static final String[] titles = { "System", "PAC-Man" };
+    private static final String[] titles = { "System", "ORCA" };
     private int mLayout = 0;
 
     @Override

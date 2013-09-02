@@ -20,26 +20,11 @@
         android:key="make_it_dark"
         android:title="@string/header_category_dark" />
 
-    <!-- TRDS / PAC In Black-->
+    <!-- TRDS / Orca Dark UI -->
     <SwitchPreference
         android:key="trds_settings"
-        android:icon="@drawable/ic_settings_pac"
+        android:icon="@drawable/ic_settings_dark"
         android:title="@string/trds_settings_title" />
-
-    <!-- links -->
-    <PreferenceCategory android:key="links_section"
-        android:title="@string/header_category_links" />
-
-    <!-- OTA -->
-    <PreferenceScreen
-        android:key="pacconsole"
-            android:title="@string/pacconsole_title"
-            android:icon="@drawable/ic_settings_pac" >
-        <intent
-                android:action="android.intent.action.MAIN"
-                android:targetPackage="com.pac.console"
-                android:targetClass="com.pac.console.PacConsole" />
-    </PreferenceScreen>
 
     <!-- Themes -->
     <PreferenceScreen
@@ -58,6 +43,10 @@
         android:title="@string/homescreen_settings_title"
         android:icon="@drawable/ic_settings_cmlauncher" />
 
+    <PreferenceCategory
+        android:key="paranoid"
+        android:title="@string/ruparanoid" />
+
     <!-- Hybrid options -->
     <PreferenceScreen
         android:key="hybrid_settings"
@@ -68,6 +57,20 @@
             android:targetPackage="com.paranoid.preferences"
             android:targetClass="com.paranoid.preferences.MainActivity" />
     </PreferenceScreen>
+    
+    <PreferenceScreen
+        android:key="halo_settings"
+        android:fragment="com.android.settings.paranoid.Halo"
+        android:title="@string/halo_settings_title"
+        android:icon="@drawable/ic_rom_control_halo"
+        android:summary="@string/header_summary_halo" />  
+        
+    <PreferenceScreen
+        android:key="pie_settings"
+        android:fragment="com.android.settings.orca.PieSettings"
+        android:title="@string/pie_settings_title"
+        android:icon="@drawable/ic_rom_control_pie"
+        android:summary="@string/header_summary_pie" />          
 
     <PreferenceCategory
         android:title="@string/user_interface" />
@@ -128,20 +131,6 @@
         android:title="@string/ribbon_settings_title"
         android:summary="@string/ribbon_settings_summary" />
 
-    <PreferenceScreen
-        android:key="pie_settings"
-        android:fragment="com.android.settings.pac.PieSettings"
-        android:title="@string/pie_settings_title"
-        android:icon="@drawable/ic_rom_control_pie"
-        android:summary="@string/header_summary_pie" />
-
-    <PreferenceScreen
-        android:key="halo_settings"
-        android:fragment="com.android.settings.paranoid.Halo"
-        android:title="@string/halo_settings_title"
-        android:icon="@drawable/ic_rom_control_halo"
-        android:summary="@string/header_summary_halo" />
-
     <PreferenceCategory
         android:key="statusbar"
         android:title="@string/header_statusbar" />
@@ -190,7 +179,7 @@
 
     <PreferenceScreen
         android:key="status_bar_misc"
-        android:fragment="com.android.settings.pac.StatusBarSettings"
+        android:fragment="com.android.settings.orca.StatusBarSettings"
         android:title="@string/status_bar_miscellaneous"
         android:summary="@string/header_summary_statusbar_misc"
         android:icon="@drawable/ic_settings_status_bar" />

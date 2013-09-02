@@ -17,15 +17,14 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
         android:title="@string/about_settings">
 
-        <!-- System update settings - launches activity -->
-        <!--PreferenceScreen android:key="system_update_settings"
+        <!-- Orca Updates -->
+        <PreferenceScreen android:key="updates"
                 android:title="@string/system_update_settings_list_item_title" 
                 android:summary="@string/system_update_settings_list_item_summary">
-            <intent android:action="android.settings.SYSTEM_UPDATE_SETTINGS" />
-        </PreferenceScreen -->
-        
-        <PreferenceScreen android:key="pac_logo"
-                          android:layout="@layout/logo_row" />
+            <intent android:action="android.intent.action.MAIN"
+                    android:targetPackage="com.s0up.goomanager"
+                    android:targetClass="com.s0up.goomanager.GooManagerActivity" />
+        </PreferenceScreen>
 
         <PreferenceScreen android:key="additional_system_update_settings"
                           android:title="@string/additional_system_update_settings_list_item_title">
@@ -35,13 +34,13 @@
         </PreferenceScreen>
 
         <PreferenceCategory
-        android:title="@string/pac_title">
+        android:title="@string/orca_title">
 
-        <!-- Share PAC-Man ROM -->
+        <!-- Share Orca ROM -->
         <Preference
             android:key="share"
-            android:title="@string/share_pacrom"
-            android:summary="@string/share_pacrom_summary" />
+            android:title="@string/share_orcarom"
+            android:summary="@string/share_orcarom_summary" />
 
         </PreferenceCategory>
 
@@ -184,29 +183,11 @@
                 android:title="@string/kernel_version"
                 android:summary="@string/device_info_default"/>
 
-        <!-- PAC version -->
-        <Preference android:key="pac_version"
+        <!-- Orca version -->
+        <Preference android:key="orca_version"
                 style="?android:preferenceInformationStyle"
-                android:title="@string/pac_version"
+                android:title="@string/orca_version"
                 android:summary="@string/mod_version_default" />
-
-        <!-- AOKP version -->
-        <Preference android:key="aokp_version"
-                style="?android:preferenceInformationStyle"
-                android:title="@string/aokp_version"
-                android:summary="@string/aokp_version_default" />
-
-        <!-- CM version -->
-        <Preference android:key="cm_version"
-                style="?android:preferenceInformationStyle"
-                android:title="@string/mod_version"
-                android:summary="@string/mod_version_default" />
-
-        <!-- PA version -->
-        <Preference android:key="pa_version"
-                style="?android:preferenceInformationStyle"
-                android:title="@string/pa_version"
-                android:summary="@string/pa_version_default" />
 
         <!-- Mod build date -->
         <Preference android:key="build_date"
