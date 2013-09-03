@@ -74,7 +74,7 @@ import java.util.List;
 /**
  * Top-level settings activity to handle single pane and double pane UI layout.
  */
-public class PacSettings extends PreferenceActivity
+public class OrcaSettings extends PreferenceActivity
         implements ButtonBarHandler, OnAccountsUpdateListener {
 
     private static final String LOG_TAG = "Settings";
@@ -856,7 +856,7 @@ public class PacSettings extends PreferenceActivity
     }
 
     public boolean shouldUpRecreateTask(Intent targetIntent) {
-        return super.shouldUpRecreateTask(new Intent(this, PacSettings.class));
+        return super.shouldUpRecreateTask(new Intent(this, OrcaSettings.class));
     }
 
     @Override

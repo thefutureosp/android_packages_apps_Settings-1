@@ -188,6 +188,12 @@
         android:title="@string/header_system" />
 
     <header
+        android:id="@+id/performance_settings"
+        android:fragment="com.android.settings.cyanogenmod.PerformanceSettings"
+        android:icon="@drawable/ic_settings_performance"
+        android:title="@string/performance_settings_title" />
+
+    <header
         android:fragment="com.android.settings.cyanogenmod.hwui.HwuiManager"
         android:icon="@drawable/ic_settings_dock"
         android:title="@string/hwui_manager_title"

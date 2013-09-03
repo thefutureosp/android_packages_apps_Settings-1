@@ -23,7 +23,6 @@ import android.graphics.Typeface;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
-import android.os.SystemProperties;
 import android.util.DisplayMetrics;
 import android.view.Gravity;
 import android.view.View;
@@ -32,8 +31,6 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import com.android.settings.R;
 
 public class ORCALogoActivity extends Activity {
     Toast mToast;
@@ -58,8 +55,6 @@ public class ORCALogoActivity extends Activity {
         Typeface light = Typeface.create("sans-serif-light", Typeface.NORMAL);
         Typeface normal = Typeface.create("sans-serif", Typeface.BOLD);
 
-        String pacVersion = SystemProperties.get("ro.orca.version");
-
         final float size = 14 * metrics.density;
         final LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(
                 LinearLayout.LayoutParams.WRAP_CONTENT,
@@ -68,7 +63,7 @@ public class ORCALogoActivity extends Activity {
         lp.bottomMargin = (int) (-4*metrics.density);
 
         TextView tv = new TextView(this);
-        if (normal != null) tv.setTypeface(normal);
+        if (light != null) tv.setTypeface(light);
         tv.setTextSize(1.25f*size);
         tv.setTextColor(0xFFFFFFFF);
         tv.setShadowLayer(4*metrics.density, 0, 2*metrics.density, 0x66000000);
@@ -76,11 +71,11 @@ public class ORCALogoActivity extends Activity {
         view.addView(tv, lp);
    
         tv = new TextView(this);
-        if (light != null) tv.setTypeface(light);
+        if (normal != null) tv.setTypeface(normal);
         tv.setTextSize(size);
         tv.setTextColor(0xFFFFFFFF);
         tv.setShadowLayer(4*metrics.density, 0, 2*metrics.density, 0x66000000);
-        tv.setText(orcaVersion);
+        tv.setText("Android" + Build.VERSION.RELEASE);
         view.addView(tv, lp);
 
         return view;
@@ -97,7 +92,7 @@ public class ORCALogoActivity extends Activity {
         getWindowManager().getDefaultDisplay().getMetrics(metrics);
 
         mContent = new ImageView(this);
-        mContent.setImageResource(R.drawable.paclogo);
+        mContent.setImageResource(com.android.internal.R.drawable.oclogo_alt);
         mContent.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
         
         final int p = (int)(32 * metrics.density);
@@ -107,6 +102,7 @@ public class ORCALogoActivity extends Activity {
             @Override
             public void onClick(View v) {
                 mToast.show();
+                mContent.setImageResource(com.android.internal.R.drawable.oclogo);
             }
         });
 
@@ -118,9 +114,10 @@ public class ORCALogoActivity extends Activity {
                         .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK
                             | Intent.FLAG_ACTIVITY_CLEAR_TASK
                             | Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS)
-                        .setClassName("com.android.settings","com.android.settings.orca.Shamu"));
+                        .addCategory("com.android.internal.category.PLATLOGO"));
+                        //.setClassName("com.android.systemui","com.android.systemui.BeanBag"));
                 } catch (ActivityNotFoundException ex) {
-                    android.util.Log.e("ORCALogoActivity", "Couldn't find a Killer Whale.");
+                    android.util.Log.e("PlatLogoActivity", "Couldn't find a bag of beans.");
                 }
                 finish();
                 return true;

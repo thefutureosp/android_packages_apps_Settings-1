@@ -508,11 +508,11 @@ public class MainSetting extends PreferenceActivity
                 if (um.hasUserRestriction(UserManager.DISALLOW_MODIFY_ACCOUNTS)) {
                     target.remove(i);
                 }
-            } else if (id == R.id.pac_section) {
+            } else if (id == R.id.orca_section) {
                 if (!onIsMultiPane()) {
                     target.remove(i);
                 }
-            } else if (id == R.id.pac_settings) {
+            } else if (id == R.id.orca_settings) {
                 if (!onIsMultiPane()) {
                     target.remove(i);
                 }

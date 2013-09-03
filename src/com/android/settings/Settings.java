@@ -88,9 +88,9 @@ public class Settings extends Activity {
         Intent SystemSettingsIntent = new Intent(this, MainSetting.class);
         listViews.add(localManager.startActivity("SystemSettings",
                 SystemSettingsIntent).getDecorView());
-        Intent PacSettingsIntent = new Intent(this, PacSettings.class);
-        listViews.add(localManager.startActivity("PacSettings",
-                PacSettingsIntent).getDecorView());
+        Intent OrcaSettingsIntent = new Intent(this, OrcaSettings.class);
+        listViews.add(localManager.startActivity("OrcaSettings",
+                OrcaSettingsIntent).getDecorView());
         mPagerAdapter = new ViewPagerAdapter(listViews);
         mPager.setAdapter(mPagerAdapter);
         mPager.setCurrentItem(0);

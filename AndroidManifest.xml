@@ -2005,13 +2005,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".aokp.fragments.About"
-            android:label="@string/title_about">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-            </intent-filter>
-        </activity>
-        <activity
             android:name=".aokp.fragments.Sound"
             android:label="@string/title_sound">
             <intent-filter>
