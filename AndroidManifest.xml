@@ -1909,7 +1909,7 @@
             android:name=".paranoid.Nyandroid"
             android:exported="true"
             android:label="Nyandroid"
-            android:icon="@drawable/nyandroid04"
+            android:icon="@drawable/orca4"
             android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
             android:hardwareAccelerated="true"
             android:launchMode="singleInstance"
