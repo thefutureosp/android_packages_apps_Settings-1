@@ -43,9 +43,19 @@
         android:id="@+id/homescreen_settings"
         android:title="@string/homescreen_settings_title"
         android:icon="@drawable/ic_settings_cmlauncher" />
+
+    <!-- Orca Updates -->
+    <header android:key="updates"
+            android:title="@string/system_update_settings_list_item_title"
+            android:icon="@drawable/ic_settings_status_bar" 
+            android:summary="@string/system_update_settings_list_item_summary">
+            <intent android:action="android.intent.action.MAIN"
+                    android:targetPackage="com.s0up.goomanager"
+                    android:targetClass="com.s0up.goomanager.GooManagerActivity" />
+    </header>
         
     <header android:id="@+id/paranoid"
-        android:title="@string/ruparanoid" />       
+        android:title="@string/ruparanoid" />               
 
     <!-- Hybrid options -->
     <header

@@ -17,22 +17,6 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
         android:title="@string/about_settings">
 
-        <!-- Orca Updates -->
-        <PreferenceScreen android:key="updates"
-                android:title="@string/system_update_settings_list_item_title" 
-                android:summary="@string/system_update_settings_list_item_summary">
-            <intent android:action="android.intent.action.MAIN"
-                    android:targetPackage="com.s0up.goomanager"
-                    android:targetClass="com.s0up.goomanager.GooManagerActivity" />
-        </PreferenceScreen>
-
-        <PreferenceScreen android:key="additional_system_update_settings"
-                          android:title="@string/additional_system_update_settings_list_item_title">
-            <intent android:action="android.intent.action.MAIN"
-                    android:targetPackage="@string/additional_system_update"
-                    android:targetClass="@string/additional_system_update_menu" />
-        </PreferenceScreen>
-
         <PreferenceCategory
         android:title="@string/device_about_title">
 
