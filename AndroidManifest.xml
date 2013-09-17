@@ -1929,6 +1929,8 @@
         <activity android:name=".orca.PieSettings" />
 
         <activity android:name=".orca.StatusBarSettings" />
+        
+        <activity android:name=".orca.DisplaySettings" />
 
         <activity android:name=".paranoid.Halo" />
 

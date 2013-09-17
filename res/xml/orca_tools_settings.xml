@@ -142,6 +142,12 @@
         android:icon="@drawable/ic_rom_control_ribbon"
         android:title="@string/ribbon_settings_title"
         android:summary="@string/ribbon_settings_summary" />
+        
+    <PreferenceScreen
+        android:key="display_settings"
+        android:icon="@drawable/ic_settings_display"
+        android:fragment="com.android.settings.orca.DisplaySettings"
+        android:title="@string/display_settings" />        
 
     <PreferenceCategory
         android:key="statusbar"

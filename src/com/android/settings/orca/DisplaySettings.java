@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings;
+package com.android.settings.orca;
 
 import static android.provider.Settings.System.SCREEN_OFF_TIMEOUT;
 
@@ -129,7 +129,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         ContentResolver resolver = getActivity().getContentResolver();
         Resources res = getResources();
 
-        addPreferencesFromResource(R.xml.display_settings_orca);
+        addPreferencesFromResource(R.xml.display_settings);
         PreferenceScreen prefSet = getPreferenceScreen();
         mContext = getActivity();
 
