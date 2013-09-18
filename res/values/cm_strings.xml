@@ -411,7 +411,7 @@
     <string name="volume_keys_control_ring_stream">Volume keys control ringtone volume</string>
 
     <!-- Lights settings screen, notification light settings -->
-    <string name="display_lights_settings_title">Display &amp; animation</string>
+    <string name="display_lights_settings_title">Display</string>
     <string name="lights_category_title">Lights</string>
     <string name="notification_pulse_title">Notification light</string>
     <string name="notification_light_general_title">General</string>

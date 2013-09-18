@@ -1932,6 +1932,8 @@
         
         <activity android:name=".orca.DisplaySettings" />
 
+	<activity android:name=".orca.FontDialogPreference" />
+
         <activity android:name=".paranoid.Halo" />
 
         <activity android:name=".cyanogenmod.HardwareKeys" />

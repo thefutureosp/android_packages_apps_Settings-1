@@ -80,7 +80,7 @@
             android:title="@string/screensaver_settings_title"
             android:fragment="com.android.settings.DreamSettings" />
 
-        <com.android.settings.FontDialogPreference
+        <com.android.settings.orca.FontDialogPreference
             android:key="font_size"
             android:title="@string/title_font_size"
             android:summary="@string/summary_font_size"

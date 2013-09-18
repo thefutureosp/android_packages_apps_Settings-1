@@ -99,7 +99,7 @@ public class Settings extends Activity {
         mPager.setCurrentItem(0);
         mPager.setOnPageChangeListener(new MyOnPageChangeListener());
         mTabStrip = (PagerTabStrip) findViewById(R.id.pager_title_strip);
-        mTabStrip.setTabIndicatorColorResource(android.R.color.holo_blue_light);
+        mTabStrip.setTabIndicatorColorResource(android.R.color.holo_red_light);
     }
 
     public class ViewPagerAdapter extends PagerAdapter {

@@ -54,8 +54,13 @@ import android.util.Log;
 import com.android.internal.view.RotationPolicy;
 import com.android.settings.DreamSettings;
 import com.android.settings.Utils;
+import com.android.settings.orca.FontDialogPreference;
 
 import org.cyanogenmod.hardware.AdaptiveBacklight;
+
+import com.android.settings.R;
+import com.android.settings.SettingsPreferenceFragment;
+import com.android.settings.Utils;
 
 import java.util.ArrayList;
 
@@ -129,7 +134,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         ContentResolver resolver = getActivity().getContentResolver();
         Resources res = getResources();
 
-        addPreferencesFromResource(R.xml.display_settings);
+        addPreferencesFromResource(R.xml.display_settings_orca);
         PreferenceScreen prefSet = getPreferenceScreen();
         mContext = getActivity();
 
