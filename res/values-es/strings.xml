@@ -2014,7 +2014,7 @@
     <string name="hybrid_settings">Propiedades Híbridas</string>
     <string name="pa_version">Versión ParanoidAndroid</string>
     <string name="pa_version_default">Desconocida</string>
-    <string name="pac_version">Versión PAC</string>
+    <string name="orca_version">Versión ORCA</string>
     <string name="aokp_version">Versión AOKP</string>
     <string name="aokp_version_default">Desconocida</string>
     <!--  About device Screen, hardware info, rear camera -->
