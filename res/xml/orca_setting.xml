@@ -92,6 +92,13 @@
         android:summary="@string/header_summary_general_ui" />
 
     <header
+        android:id="@+id/active_display"
+        android:fragment="com.android.settings.chameleonos.ActiveDisplaySettings"
+        android:icon="@drawable/ic_rom_control_clock"
+        android:title="@string/ad_settings_title" 
+	android:summary="@string/ad_settings_summary" />
+
+    <header
         android:id="@+id/lockscreen"
         android:fragment="com.android.settings.aokp.fragments.Lockscreens"
         android:title="@string/lockscreen_options"
